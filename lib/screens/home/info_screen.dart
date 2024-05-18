@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_alippe_pro/screens/first_screen.dart';
 import 'package:gap/gap.dart';
 
+import '../first_screen.dart';
 import 'info_detail_screen.dart';
-import 'theme/app_colors.dart';
-import 'widgets/information_about_app.dart';
+import '../theme/app_colors.dart';
+import '../widgets/information_about_app.dart';
 
 class InfoScreen extends StatelessWidget {
   const InfoScreen({super.key});

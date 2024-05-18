@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_alippe_pro/screens/theme/app_colors.dart';
 import 'package:gap/gap.dart';
 
-import 'widgets/information_about_app.dart';
+import '../widgets/information_about_app.dart';
 
 class InfoDetailScreen extends StatelessWidget {
   const InfoDetailScreen({super.key, this.text});

@@ -1,8 +1,9 @@
 import 'package:bottom_navbar_with_indicator/bottom_navbar_with_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_alippe_pro/screens/first_screen.dart';
-import 'package:flutter_alippe_pro/screens/info_screen.dart';
+import 'package:flutter_alippe_pro/screens/presentation/presentation_is_ready_screen.dart';
+import 'package:flutter_alippe_pro/screens/home/info_screen.dart';
 
+import 'first_screen.dart';
 import 'theme/app_colors.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,11 +15,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _MyExampleState extends State<HomePage> {
-  int _selectedIndex = 0; //default index
+  int _selectedIndex = 1; //default index
 
   final List<Widget> _widgetOptions = [
     const InfoScreen(),
-    const FirstScreen(),
+    const PresentationIsReadyScreen(),
     const FirstScreen(),
     const FirstScreen(),
     const FirstScreen(),
@@ -35,7 +36,7 @@ class _MyExampleState extends State<HomePage> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: CustomLineIndicatorBottomNavbar(
-        selectedColor:AppColors.strongBlue,
+        selectedColor: AppColors.strongBlue,
         unSelectedColor: AppColors.blue,
         backgroundColor: Colors.white,
         currentIndex: _selectedIndex,
@@ -57,7 +58,7 @@ class _MyExampleState extends State<HomePage> {
             icon: Icons.home,
           ),
           CustomBottomBarItems(
-            label: 'Account',
+            label: 'Presentation',
             icon: Icons.account_box_outlined,
           ),
           CustomBottomBarItems(
